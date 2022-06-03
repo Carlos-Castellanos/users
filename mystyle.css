@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/* head area */
+.site-init {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30vh;
+    background-color: rgb(223, 178, 28);
+    color: black;
+}
+
+.site-init h1 {
+    font-weight: 300;
+}
+
+site-init nav {
+    color: black;
+    text-decoration: none;
+    margin-right: 2rem;
+}
+ /* main area */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    overflow: auto;
+}
+
+main .login-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 247);
+    height: 15rem;
+    width: 30rem;
+}
+
+input{
+    width: 15rem;
+    padding: 5px;
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    width: auto;
+}
+
+button{
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+}
+/* registercontainer */
+.site-register {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    background-color: rgb(223, 178, 28);
+    color: black;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 247);
+    height: 40rem;
+    width: 30rem;
+}
+
