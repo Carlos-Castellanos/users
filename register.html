@@ -1,38 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="mystyle.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyle.css" />
     <title>FSDI-105/FSDI-105</title>
-</head>
-<body>
-    <header class="site-register">
-        <h1>My Awesome Registration System</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="register.html">Register</a>
-        </nav>
-    </header>
-<main>
-    <h2>Register a new user</h2>
-    <!--form with the next fiels: email....-->
-    <div class="form-container" id="userReg">
-    <input type="email" id="txtEmail" placeholder="Enter you email">
-    <input type="password" id="txtPassword" placeholder="Enter your Password">
-    <input type="text" id="txtFirstName" placeholder="Enter your First Name">
-    <input type="text" id="txtLastName" placeholder="Enter your Last Name">
-    <input type="number" id="txtAge" placeholder="Enter you age">
-    <input type="address" id="txtAddress" placeholder="Enter your address">
-    <input type="phoneNumber" id="txtPhoneNumber" placeholder="Enter your phone number">
-    <input type="number" id="txtPayment" placeholder="Enter your Payment">
-    <input type="text" id="txtColor" placeholder="Enter your color"> 
-    <button id="btnRegister">Register</button>
-    </div>
+  </head>
 
-</main>
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script src="app.js"></script>
-</body>
+  <body>
+    <header class="site-register">
+      <h1>My Awesome Registration System</h1>
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="index.html">Home</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--form with the next fiels: email....-->
+      <div class="backLogin">
+        <div>
+          <h2>Register a new user</h2>
+        </div>
+        <div class="form-container" id="userReg">
+          <div class="inputArea">
+            <input
+              type="email"
+              id="txtEmail"
+              placeholder="Enter you email"
+            /><span id="errorEmail"></span>
+          </div>
+          <div class="inputArea">
+            <input
+              type="password"
+              id="txtPassword"
+              placeholder="Enter your Password"
+            /><span id="errorPass"></span>
+          </div>
+          <div class="inputArea">
+            <input
+              type="text"
+              id="txtFirstName"
+              placeholder="Enter your First Name"
+            /><span id="errorFName"></span>
+          </div>
+          <div class="inputArea">
+            <input
+              type="text"
+              id="txtLastName"
+              placeholder="Enter your Last Name"
+            /><span id="errorLName"></span>
+          </div>
+          <div class="inputArea">
+            <input type="number" id="txtAge" placeholder="Enter you age" /><span
+              id="errorAge"
+            ></span>
+          </div>
+          <div class="inputArea">
+            <input
+              type="address"
+              id="txtAddress"
+              placeholder="Enter your address"
+            /><span id="errorAddress"></span>
+          </div>
+          <div class="inputArea">
+            <input
+              type="phoneNumber"
+              id="txtPhoneNumber"
+              placeholder="Enter your phone number"
+            /><span id="errorPhone"></span>
+          </div>
+          <div class="inputArea">
+            <input
+              type="number"
+              id="txtPayment"
+              placeholder="Enter your Payment"
+            /><span id="errorPayment"></span>
+          </div>
+          <div class="inputArea">
+            <input
+              type="text"
+              id="txtColor"
+              placeholder="Enter your color"
+            /><span id="errorColor"></span>
+          </div>
+          <button id="btnRegister">Register</button>
+        </div>
+        <!--form container-->
+      </div>
+      <!--backlogin-->
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="storageManager.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
